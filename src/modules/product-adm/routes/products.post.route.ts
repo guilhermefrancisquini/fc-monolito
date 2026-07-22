@@ -5,8 +5,6 @@ import { AddProductFacadeInputDto } from "../facade/product-adm.facade.interface
 export const productCreateRoute = express.Router()
 
 productCreateRoute.post("/", async (req: Request, res: Response) => {
-  const { name, description, salesPrice } = req.body
-
   try {
     const productFacade = ProductAdmFacadeFactory.create()
 
