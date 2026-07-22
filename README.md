@@ -25,6 +25,12 @@ Projeto exemplo FullCycle com arquitetura modular em Node.js + TypeScript.
   - Facade: `store-catalog.facade.ts`
   - Gateway/Repository: busca e exposição de produtos
 
+- `src/modules/checkout`
+  - Finalização de pedidos
+  - Domain: `client.entity.ts`, `order.entity.ts`, `product.entity.ts`
+  - Usecase: `place-order`
+  - Gateway: `checkout.gateway.ts`
+
 - `src/modules/payment`
   - Processamento de pagamento e transação
   - Domain: `transaction.ts`
