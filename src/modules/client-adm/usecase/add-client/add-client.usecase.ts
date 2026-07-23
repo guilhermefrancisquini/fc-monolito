@@ -1,3 +1,4 @@
+import console from "console";
 import Address from "../../../@shared/domain/value-object/address";
 import Id from "../../../@shared/domain/value-object/id.value-object";
 import Client from "../../domain/client.entity";
