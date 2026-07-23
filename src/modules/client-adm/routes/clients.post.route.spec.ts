@@ -59,6 +59,7 @@ describe("Clients tests", () => {
         expect(response.body.name).toBe("Client 2")
         expect(response.body.email).toBe("client2@example.com")
         expect(response.body.document).toBe("12345678900")
+        expect(response.body.address).toStrictEqual(req.address)
     })
 
 })
