@@ -22,6 +22,9 @@ export class ProductModel extends Model {
   stock: number;
 
   @Column({ allowNull: false })
+  salesPrice: number;
+
+  @Column({ allowNull: false })
   createdAt: Date;
 
   @Column({ allowNull: false })

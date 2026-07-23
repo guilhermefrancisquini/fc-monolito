@@ -43,6 +43,7 @@ describe("Products tests", () => {
             name: "Product 1",
             description: "Product 1 description",
             purchasePrice: 10,
+            salesPrice: 20,
             stock: 100
         })
 
@@ -51,6 +52,7 @@ describe("Products tests", () => {
         expect(response.body.name).toBe("Product 1")
         expect(response.body.description).toBe("Product 1 description")
         expect(response.body.purchasePrice).toBe(10)
+        expect(response.body.salesPrice).toBe(20)
         expect(response.body.stock).toBe(100)
     })
 
