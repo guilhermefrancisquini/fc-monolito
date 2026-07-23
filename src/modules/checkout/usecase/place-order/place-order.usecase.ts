@@ -59,7 +59,7 @@ export default class PlaceOrderUseCase implements UseCaseInterface {
     const order = new Order({
       client: myClient,
       products: products,
-    });    
+    });
 
     const payment = await this._paymentFacade.process({
         orderId: order.id.id,
@@ -90,7 +90,7 @@ export default class PlaceOrderUseCase implements UseCaseInterface {
     return {
       id: order.id.id,
       invoiceId: payment.status === "approved" ? invoice.id : null,
-        status: order.status,
+      status: order.status,
       total: order.total,
       products: order.products.map((p) => {
         return {
